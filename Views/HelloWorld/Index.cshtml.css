@@ -1,0 +1,21 @@
+
+#HelloWorld {
+    /* display: block; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#HelloWorld > h1 {
+    color: orange;
+    font-size: 200px;
+    font-family: sans-serif;
+    font-style: bold;
+}
+
+img {
+    width: 30%;
+    height: 30%;
+}
+
