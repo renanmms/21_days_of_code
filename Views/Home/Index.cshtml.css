@@ -1,0 +1,5 @@
+a {
+    font-size: 32px;
+    display: flex;
+    flex-direction: column;
+}
