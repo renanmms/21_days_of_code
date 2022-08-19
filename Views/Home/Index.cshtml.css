@@ -1,5 +1,26 @@
-a {
+#links {
     font-size: 32px;
+    width: 15%; 
+    text-align: center;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+}
+
+#links > a {
+    
+    color: white;
+    background-color: purple;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px;
+    
+}
+
+h4 {
+    margin: 10px;
+    padding: 5px;
+}
+
+p {
+    margin-left: 5px;
 }
