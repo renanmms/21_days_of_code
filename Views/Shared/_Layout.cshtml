@@ -6,7 +6,6 @@
     <title>@ViewData["Title"] 21 Days Of Code</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    @* <link rel="stylesheet" href="~/_21_days_of_code.styles.css" asp-append-version="true" /> *@
     <link rel="stylesheet" href="21_days_of_code.styles.css">
 </head>
 <body>
@@ -31,20 +30,9 @@
             </div>
         </nav>
     </header>
-    <div>
-        @* <main role="main" class="pb-3">
-        </main> *@
-        
-    </div>
+    
     @RenderBody()
-    @* <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2022 - _21_days_of_code - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script> *@
+    
     @await RenderSectionAsync("Scripts", required: false)
 
 </body>
