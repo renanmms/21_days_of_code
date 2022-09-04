@@ -1,0 +1,14 @@
+div {
+    width: 30%;
+    height: 50%;
+    position: absolute;
+    left: 500px;    
+    top: 200px;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+
+img {
+    position: relative;
+    height: 100%;
+}
