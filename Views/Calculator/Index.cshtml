@@ -1,24 +1,33 @@
-@model _21_days_of_code.ViewModels.Calculator
+@model _21_days_of_code.Models.CalculatorInputModel;
 
-<div class="text-center grid">
-    <input type="text"><br>
-    <button>7</button>
-    <button>8</button>
-    <button>9</button>
-    <button>x</button><br>
+<form asp-controller="Calculator" asp-action="Calculate" method="post">
+    <div class="text-center grid calculadora">
+        <input id="expressao" type="text" disabled><br>
+        <input type="button" value="7" onclick="preencherExpressao('7')" />
+        <input type="button" value="8" onclick="preencherExpressao('8')" />
+        <input type="button" value="9" onclick="preencherExpressao('9')" />
+        <input type="button" value="x" onclick="preencherExpressao('*')" /><br>
 
-    <button>4</button>
-    <button>5</button>
-    <button>6</button>
-    <button>-</button><br>
+        <input type="button" value="4" onclick="preencherExpressao('4')" />
+        <input type="button" value="5" onclick="preencherExpressao('5')" />
+        <input type="button" value="6" onclick="preencherExpressao('6')" />
+        <input type="button" value="-" onclick="preencherExpressao('-')" /><br>
 
-    <button>1</button>
-    <button>2</button>
-    <button>3</button>
-    <button>+</button><br>
+        <input type="button" value="1" onclick="preencherExpressao('1')" />
+        <input type="button" value="2" onclick="preencherExpressao('2')" />
+        <input type="button" value="3" onclick="preencherExpressao('3')" />
+        <input type="button" value="+" onclick="preencherExpressao('+')" /><br>
 
-    <button>0</button>
-    <button>00</button>
-    <button>/</button>
-    <button>=</button>
-</div>
+        <input type="button" value="0" onclick="preencherExpressao('0')" />
+        <input type="button" value="00" onclick="preencherExpressao('00')" />
+        <input type="button" value="/" onclick="preencherExpressao('/')" />
+        <input type="submit" value="=" />
+    </div>
+</form>
+
+<script>
+    function preencherExpressao(number) {
+        document.getElementById("expressao").value += number;
+    }
+
+</script>
