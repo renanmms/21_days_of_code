@@ -1,4 +1,14 @@
-button {
+.calculadora > input[type="button"] {
+    margin: 2px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: bold;
+    font-size: larger;
+    width: 5vh;
+    height: 5vh;
+    background-color: white;
+}
+
+input[type="submit"] {
     margin: 2px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-style: bold;
